@@ -1,8 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h2>
-    Parent Name is {{ parentName }}!
+    Hello {{ yourName }}!
   </h2>
-  pls input parent name: <input type="text" #inputName (keyup)="setName(inputName.value)" >
+  <input type="text" #inputName (keyup)="setName(inputName.value)" >
+  <br/>
+  <br/>
+  Input child name from parent component: 
+  <!-- <input type="text" #childName (keyup)="setChildName(childName.value)"> -->
+  <app-child-component [name]="childName"></app-child-component>
 </div>
 
