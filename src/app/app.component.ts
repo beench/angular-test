@@ -11,8 +11,12 @@ export class AppComponent {
   yourName: string;
   childName = "Bobby";
   parentName = "";
-
   age: number;
+  book_list = [
+    {name: "11111"},
+    {name: "22222"},
+    {name: "33333"}
+  ]
 
   constructor() {}
   setName(yourName) {
