@@ -1,18 +1,18 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h2>
-    Hello {{ yourName }}!
-  </h2>
-  <br/>
-  Pls input your name: 
-  <input type="text" #inputName (keyup)="setName(inputName.value)" >
-  <br/>
-  <br/>
-  <!-- Input child name from parent component:  -->
-  <!-- <input type="text" #childName (keyup)="setChildName(childName.value)"> -->
-  <app-child-component [name]="childName" (parentNameFromChild)="setParentName($event)"></app-child-component>
-  <br/>
-  <br/>
+  <h2>Hello {{ yourName }}!</h2>
+  <br />
+  Pls input your name:
+  <input type="text" #inputName (keyup)="setName(inputName.value)" />
+  <br />
+  Pls input child age:
+  <input type="number" name="age" m [(ngModel)]="age">
+  <br />
+  <app-child-component
+    [name]="childName"
+    [childAge]="age"
+    (parentNameFromChild)="setParentName($event)"
+  ></app-child-component>
+  <br />
+  <br />
   Parent name from child is {{ parentName }}
 </div>
-

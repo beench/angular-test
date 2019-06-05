@@ -1,4 +1,4 @@
-import { Component, Output, OnInit } from "@angular/core";
+import { Component, Output, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-root",
@@ -9,9 +9,10 @@ export class AppComponent {
   title = "my-first-app";
 
   yourName: string;
-  // childName: string;
   childName = "Bobby";
   parentName = "";
+
+  age: number;
 
   constructor() {}
   setName(yourName) {
