@@ -11,10 +11,15 @@ export class AppComponent {
   yourName: string;
   // childName: string;
   childName = "Bobby";
+  parentName = "";
 
   constructor() {}
   setName(yourName) {
     this.yourName = yourName;
+  }
+
+  setParentName(parentName) {
+    this.parentName = parentName;
   }
 
   // setChildName(childName) {
