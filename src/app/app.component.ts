@@ -26,9 +26,4 @@ export class AppComponent {
   setParentName(parentName) {
     this.parentName = parentName;
   }
-
-  // setChildName(childName) {
-  //   this.childName = childName;
-  //   console.log(this.childName);
-  // }
 }
