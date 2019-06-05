@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
 import { AppComponent } from './app.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
+import { HelloServiceService } from './hello-service.service'
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { ChildComponentComponent } from './child-component/child-component.compo
   imports: [
     BrowserModule, FormsModule
   ],
-  providers: [],
+  providers: [HelloServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
